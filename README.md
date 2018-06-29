@@ -9,3 +9,7 @@ Container for react application development
 > nodemon
 > Reactotron
 > create-react-app
+
+```
+Ps. See more about this image at Docker Hub
+```
