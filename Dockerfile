@@ -8,7 +8,8 @@ RUN apt update && apt install -y \
     libxtst6 \
     libxss1 \
     libnss3 \
-    xvfb
+    xvfb \
+    apt-transport-https
 
 RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v1.15.0/Reactotron-linux-x64.zip" -o /tmp/reactotron.zip \
     && unzip /tmp/reactotron.zip -d /opt \
