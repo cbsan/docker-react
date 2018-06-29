@@ -2,7 +2,7 @@
 
 DK=docker
 DK_DIR=./docker
-TAG=latest
+TAG=electron
 
 build:
 	$(DK) build -t cbsan/react:$(TAG) .
