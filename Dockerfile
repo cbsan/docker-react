@@ -8,6 +8,7 @@ RUN apt update && apt install -y \
     libxtst6 \
     libxss1 \
     libnss3 \
+    libgtk2.0-0 \
     xvfb \
     apt-transport-https
 
