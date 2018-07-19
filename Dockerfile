@@ -12,7 +12,7 @@ RUN apt update && apt install -y \
     xvfb \
     apt-transport-https
 
-RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v1.15.0/Reactotron-linux-x64.zip" -o /tmp/reactotron.zip \
+RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v2.0.0/Reactotron-linux-x64.zip" -o /tmp/reactotron.zip \
     && unzip /tmp/reactotron.zip -d /opt \
     && ln -sF /opt/Reactotron/Reactotron /usr/local/bin/Reactotron \
     && rm -f /tmp/reactotron.zip
