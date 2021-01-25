@@ -12,10 +12,10 @@ RUN apt update && apt install -y \
     xvfb \
     apt-transport-https
 
-RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v2.17.1/Reactotron-linux-x64.zip" -o /tmp/reactotron.zip \
-    && unzip /tmp/reactotron.zip -d /opt \
-    && ln -sF /opt/Reactotron/Reactotron /usr/local/bin/Reactotron \
-    && rm -f /tmp/reactotron.zip
+RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v2.17.1/reactotron-app_2.17.1_amd64.deb" -o /tmp/reactotron.deb \
+    && apt install /tmp/reactotron.deb \
+    #&& ln -sF /opt/Reactotron/Reactotron /usr/local/bin/Reactotron \
+    && rm -f /tmp/reactotron.deb
 
 RUN set -xe \
     && npm_pkg="\
