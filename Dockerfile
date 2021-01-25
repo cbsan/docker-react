@@ -17,13 +17,6 @@ RUN curl -fSL "https://github.com/infinitered/reactotron/releases/download/v2.17
     #&& ln -sF /opt/Reactotron/Reactotron /usr/local/bin/Reactotron \
     && rm -f /tmp/reactotron.deb
 
-RUN set -xe \
-    && npm_pkg="\
-    yarn \
-    nodemon" \
-    && npm i -g $npm_pkg --unsafe-perm=true --allow-root \
-    && yarn global add create-react-app
-
 RUN Xvfb -screen 1280x2000x32 :0 & export DISPLAY=:0
 
 WORKDIR /usr/src/app
